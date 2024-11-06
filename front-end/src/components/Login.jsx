@@ -16,7 +16,7 @@ const LoginPage = () => {
                 // Store the token in local storage
                 localStorage.setItem("authToken", response.data.data.token);
                 // Navigate to the tasks page
-                navigate("/tasks");
+                setTimeout(() => navigate("/tasks"), 2000);
             } else {
                 setErrorMessage("Login failed. Please check your username and password.");
             }
