@@ -4,7 +4,10 @@
     "description": "AsiaQuest technical test",
     "main": "index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "dev": "npx ts-node ./src/main.ts",
+        "build": "tsc",
+        "start": "node dist/main.js"
     },
     "jest": {
         "transform": {
@@ -16,6 +19,7 @@
     "dependencies": {
         "@prisma/client": "^5.22.0",
         "bcrypt": "^5.1.1",
+        "cors": "^2.8.5",
         "express": "^4.21.1",
         "uuid": "^11.0.2",
         "winston": "^3.16.0",
